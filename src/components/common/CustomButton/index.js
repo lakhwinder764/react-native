@@ -5,6 +5,7 @@ import colors from '../../../assests/theme/colors';
 import styles from '../CustomButton/styles';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { ActivityIndicator } from 'react-native';
+
 const CustomButton=({ 
     title,
     loading,
@@ -12,7 +13,7 @@ const CustomButton=({
     secondary,
     primary,
     danger,
-    onPress      
+    onpress      
     })=> {
     const getbackgroundcolor=()=>{
         if(disabled){
@@ -32,7 +33,7 @@ const CustomButton=({
     <TouchableOpacity 
     
     disabled={disabled}
-    onPress={onPress}
+    onPress={onpress}
     style={[styles.wrapper,{backgroundColor:getbackgroundcolor()}]}>
         <View style={styles.loadersection}>
         {loading && <ActivityIndicator color={primary?colors.secondary:colors.primary}/>}

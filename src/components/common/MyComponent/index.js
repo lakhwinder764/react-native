@@ -7,6 +7,7 @@ import Input from "../Input"
 import CustomButton from "../CustomButton"
 import styles from '../MyComponent/styles'
 import { useNavigation } from '@react-navigation/core'
+import { REGISTER } from '../../../constants/Routenames'
 const index=()=> {
     const {navigate}=useNavigation();
     return (
@@ -43,12 +44,12 @@ const index=()=> {
          securetextentry={true} 
             />
         <CustomButton primary="true" title="submit" /> 
-          <View>
-              <Text>Need a acount?</Text>
+          <View style={styles.createSection}>
+              <Text style={styles.infotext}>Need a acount?</Text>
               <TouchableOpacity onPress={()=>{
                   navigate(REGISTER)
               }}>
-                 <Text> Register</Text>
+                 <Text style={styles.linkbutton}> Register</Text>
               </TouchableOpacity>
          </View>
           </View>

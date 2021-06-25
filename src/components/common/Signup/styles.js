@@ -27,7 +27,7 @@ export default StyleSheet.create({
            fontWeight:"500",
     },
     font:{
-        paddingTop:20,
+        paddingTop:90,
 
     },
     createSection:{
@@ -40,6 +40,9 @@ export default StyleSheet.create({
            paddingLeft:17,
            color:Colors.primary,
            fontSize:16
+    },
+    name:{
+        color:"red"
     }
 
 })
